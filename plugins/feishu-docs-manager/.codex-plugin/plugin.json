@@ -5,10 +5,10 @@
   "author": {
     "name": "yixin",
     "email": "",
-    "url": "https://github.com/yixin"
+    "url": "https://github.com/xiayixin888-dotcom"
   },
-  "homepage": "https://github.com/yixin/feishu-docs-manager",
-  "repository": "https://github.com/yixin/feishu-docs-manager",
+  "homepage": "https://github.com/xiayixin888-dotcom/feishu-docs-manager",
+  "repository": "https://github.com/xiayixin888-dotcom/feishu-docs-manager",
   "license": "MIT",
   "keywords": [
     "codex",
@@ -30,9 +30,9 @@
       "Read",
       "Write"
     ],
-    "websiteURL": "https://github.com/yixin/feishu-docs-manager",
-    "privacyPolicyURL": "https://github.com/yixin/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/yixin/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/TERMS.md",
+    "websiteURL": "https://github.com/xiayixin888-dotcom/feishu-docs-manager",
+    "privacyPolicyURL": "https://github.com/xiayixin888-dotcom/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/xiayixin888-dotcom/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/TERMS.md",
     "defaultPrompt": [
       "Download this Feishu folder to local files.",
       "Export these Feishu docs as PDFs.",
