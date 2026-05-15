@@ -10,11 +10,13 @@ Use the official `lark-cli` first for Feishu/Lark Drive work. Prefer user OAuth/
 ## Workflow
 
 1. Locate or install `lark-cli`.
-   - Check `which lark-cli` and local project paths such as `lark-cli-bin/lark-cli`.
+   - Check `which lark-cli`, `LARK_CLI`, local project paths such as `lark-cli-bin/lark-cli`, and recent Codex workspaces such as `~/Documents/Codex/*/*/lark-cli-bin/lark-cli`.
+   - If Codex runs under `bash` but the user's shell config is `zsh`, inspect proxy/PATH clues in `~/.zshrc` before downloading anything. Reuse existing local binaries when found.
    - If npm/npx is unavailable, download the official GitHub Release binary into the workspace instead of requiring system installation.
    - Do not use third-party CLIs unless the user explicitly prefers them.
 2. Configure and authorize.
    - Run `lark-cli config show` first.
+   - If `auth status` fails with `keychain Get failed` or `keychain not initialized`, do not reinitialize immediately. On macOS this usually means the sandbox cannot access the saved Keychain token; rerun the same `lark-cli` command with escalation/outside the sandbox and continue if the token is valid.
    - If no app is configured, use `lark-cli config init --new` and send the exact verification URL to the user.
    - Use `lark-cli auth login --scope "<scopes>"` for minimal scopes. Send the exact device verification URL as plain text/code block.
    - After approval, run `lark-cli auth status` and verify the needed scopes are present.
@@ -41,11 +43,10 @@ Example:
 ```bash
 python3 /Users/xia/.codex/skills/feishu-docs-manager/scripts/export_folder.py \
   --folder-url "https://example.feishu.cn/drive/folder/FOLDER_TOKEN" \
-  --out exports/feishu_folder \
-  --cli ./lark-cli-bin/lark-cli
+  --out exports/feishu_folder
 ```
 
-The script lists the folder, exports online docs/sheets/bitables, downloads ordinary files, and writes `export_report.json`.
+The script auto-detects `lark-cli` from `--cli`, `LARK_CLI`, `PATH`, `./lark-cli-bin/lark-cli`, common local bins, and recent Codex workspaces. It lists the folder, exports online docs/sheets/bitables, downloads ordinary files, and writes `export_report.json`.
 
 ## Permission Loop
 
