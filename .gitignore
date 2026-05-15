@@ -1,0 +1,10 @@
+exports/
+lark-cli-bin/
+feishu_batch_export.py
+feishu_download_readme.md
+feishu_folder_items.json
+export_feishu_folder_with_lark_cli.py
+links.txt
+*.zip
+*.tar.gz
+.DS_Store

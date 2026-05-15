@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feishu Docs Manager"
+  short_description: "Manage Feishu docs with lark-cli."
+  default_prompt: "Use $feishu-docs-manager to download, export, list, or troubleshoot Feishu/Lark Drive documents and folders."
+
+policy:
+  allow_implicit_invocation: true

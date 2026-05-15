@@ -1,0 +1,43 @@
+{
+  "name": "feishu-docs-manager",
+  "version": "0.1.0",
+  "description": "Codex plugin for downloading, exporting, listing, and troubleshooting Feishu/Lark Drive documents and folders with official lark-cli.",
+  "author": {
+    "name": "yixin",
+    "email": "",
+    "url": "https://github.com/yixin"
+  },
+  "homepage": "https://github.com/yixin/feishu-docs-manager",
+  "repository": "https://github.com/yixin/feishu-docs-manager",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "feishu",
+    "lark",
+    "docs",
+    "drive",
+    "lark-cli"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Feishu Docs Manager",
+    "shortDescription": "Manage Feishu/Lark docs with lark-cli.",
+    "longDescription": "Download, export, list, and troubleshoot Feishu/Lark Drive documents, sheets, files, and folders using the official lark-cli OAuth/device-code workflow. Includes reusable guidance for permissions, admin approval loops, and batch folder export.",
+    "developerName": "yixin",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/yixin/feishu-docs-manager",
+    "privacyPolicyURL": "https://github.com/yixin/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/yixin/feishu-docs-manager/blob/main/plugins/feishu-docs-manager/TERMS.md",
+    "defaultPrompt": [
+      "Download this Feishu folder to local files.",
+      "Export these Feishu docs as PDFs.",
+      "Troubleshoot my lark-cli permission error."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
